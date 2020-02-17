@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* kleuren */
+    --textCol: #0a0a0a;
+    --textCol2: #f0f0f0;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    width: 100vw;
+    max-width: 100vw;
+    background-color: #B0CDC9;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3;
+}
+
+
+.nav-img {
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+
+    top: 5rem;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+    overflow: hidden;
+    margin-top: -1px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 1em 1.4rem 1em 1em;
+    min-width: 14rem;
+    text-align: right;
+    z-index: 3;
+    transition: all ease-out .3s;
+    transform: translateX(100%);
+
+    margin-top: -1px;
+    background-color: white;
+}
+
+
+nav ul a {
+    color: var(--textCol);
+    font-weight: bold;
+}
+
+nav a svg {
+    fill: var(--textCol);
+    width: auto;
+    height: 1.2rem;
+}
+
+nav ul li:last-child {
+    padding-bottom: 100vh;
+}
+
+#burgerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin-right: 1.2rem;
+}
+
+
+#burgerMenu svg {
+    height: 1.2rem;
+    width: auto;
+
+    margin-left: .8rem;
+}
+
+#burgerMenu rect {
+    transition: all .25s ease-in-out;
+}
+
+.menuActive ul li {
+    transform: translateX(0);
+}
+
+
+
+
+
+.nav-img {
+    max-width: 30%;
+    z-index: 999;
+    height: 70%;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 2, 5px;
+}
+
+/*********
+Main
+*********/
+main {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: white;
+    margin-top: 5rem;
+}
+
+/* main over*/
+
+header {
+    z-index: 3;
+    position: fixed;
+    transition: top .3s ease-in-out;
+    background-color: white;
+    top: 0;
+}
+
+section {
+    min-height: 100vh;
+}
+
+
+.landingImg {
+    position: relative;
+
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0)), url("img/Josefien.%20Matla.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.landingImg div {
+    align-self: center;
+    justify-self: center;
+
+    max-width: 35vw;
+}
+
+.landingImg div h1 {
+    font-size: 50px;
+}
+
+.landingImg div p {
+    font-size: 25px;
+    max-width: 20vw;
+}
+
+.Design {
+    text-align: left;
+    font-family: roboto, bold;
+}
+
+.titelcode {
+    text-align: right;
+    font-family: roboto, bold;
+}
+
+.container-projecten {
+    background-color: #D3EBE8;
+}
+
+
+.projecten {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 280px;
+    grid-gap: 3em;
+    max-width: 1400px;
+    padding: 10px;
+}
+
+.projecten article {
+    margin-top: 20px;
+    border: 0px, 20px, 20px, 0px;
+    background-color: #EDEDED;
+    padding: 5px;
+    border: 2px #707070;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.projecten article img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+
+}
+
+.projecten article h1 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    font-size: 20px;
+}
+
+.projecten article p {
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    margin-top: 0.2em;
+    color: #908989;
+    font-size: 17px;
+}
+
+.projecten section :hover {
+    background: #D3E0DE;
+}
+
+
+.texts-buddy {
+    background: #ffffff;
+
+}
+
+.texts-buddy img {
+    width: 50%;
+}
+
+
+
+
+.mijnwerk {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* about pagina*/
+
+.foto {
+    display: flex;
+    flex-direction: row;
+    object-position: right;
+
+}
+
+#abouttekst h1{
+    text-align: center;
+    max-width: 80vw;
+    font-size: 80px;
+    margin-left: 30px;
+    padding-top: 200px;
+    padding-left: 10px;
+}
+
+#abouttekst p{
+     text-align: left;
+    max-width: 50vw;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-bottom: 230px;
+}
+
+#aboutme{
+    background-color:#D3EBE8;
+}
+
+#aboutme img{
+}
+
+
+footer {
+    width: 100%;
+    background-color: #B0CDC9;
+    height: 10rem;
+    margin-top: 25px;
+}
+
+footer img{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*
+Responsive
+*/
+
+/* Tablet */
+@media screen and (min-width: 48rem) {}
+
+/* Desktop */
+@media screen and (min-width: 64rem) {
+    #burgerMenu {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    nav ul li {
+        background-color: none;
+        width: auto;
+        transform: translateX(0);
+        min-width: inherit;
+
+        background-color: #B0CDC9;
+    }
+
+    nav ul li:last-child {
+        padding-bottom: 0;
+    }
+}
+
+
+/*
+Animatie
+*/
+
+/*burger*/
+.menuActive rect:first-child {
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate(4px, -4px);
+}
+
+.menuActive rect:nth-child(2) {
+    opacity: 0;
+}
+
+.menuActive rect:last-child {
+    transform-origin: 0 100%;
+    transform: rotate(-45deg) translate(4.5px, 2.5px);
+}
+
+
+
+
+
+/* Bron contactformulier: Azam Awan */
+
+.contactpagina {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: roboto, sans-serif;
+}
+
+.contact-form {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.contact-form input[type="text"] {
+    margin-top: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 45px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.contact-form textarea#message {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 180px;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.add-btn.contact-btn {
+    text-transform: uppercase;
+    color: #fff;
+    width: 300px;
+    background: #3f7a6f;
+    padding: 20px;
+    border: 4px solid #3f7a6f;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.add-btn.contact-btn:hover {
+    background: #2A564F;
+
+    border: 4px solid #2A564F;
+
+}
